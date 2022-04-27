@@ -84,3 +84,23 @@ function areaCirculo(radio) {
 
 
 console.groupEnd();
+
+
+// Aqui integramos con el HTML
+
+function calcularPerimetroCuadrado () {
+    const input = document.getElementById("ImputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("ImputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert(area);
+}
+
+
+// Reto crear funciones para el triangulo y Circulo

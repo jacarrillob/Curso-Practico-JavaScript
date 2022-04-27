@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Figuras Geométricas</title>
+    <link rel="stylesheet" href="assets/css/figuras.css">
 </head>
+
 <body>
-    <h1>Figuras Geométricas</h1>
+    <header class="header">
+        <div>
+            <h1>Figuras Geométricas</h1>
+            <p>Este es el primer taller pr&aacute;ctico de JavaScript</p>
+        </div>
+    </header>
+    <section>
+        <h2>Calcula el &aacute;rea y per&iacute;metro de un cuadrado</h2>
+        <form>
+            <label for="ImputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado:
+            </label>
+            <input id="ImputCuadrado" type="number" placeholder="Eje. 1">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular el per&iacute;metro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular el &aacute;rea
+            </button>
+        </form>
+    </section>
+
 
     <script type="text/javascript" src="assets/js/figuras.js"></script>
 </body>
+
 </html>
