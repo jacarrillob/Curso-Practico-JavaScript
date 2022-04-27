@@ -1,14 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Figuras Geométricas</title>
-</head>
-<body>
-    <h1>Figuras Geométricas</h1>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/figuras.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <h1>Figuras Geométricas</h1>
+        <p>Este es el primer taller pr&aacute;ctico de JavaScript</p>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li>
+            <a href="figuras.html">Figuras Geométricas</a>
+          </li>
+          <li>
+            <a href="descuentos.html">Figuras Geométricas</a>
+          </li>
+          <li>
+            <a href="promedio.html">Promedio</a>
+          </li>
+          <li>
+            <a href="mediana.html">Mediana</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container">
+      <div class="cuadrado">
+        <h2>Calcula el &aacute;rea y per&iacute;metro de un cuadrado</h2>
+        <form>
+          <label for="ImputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+          </label>
+          <input id="ImputCuadrado" type="number" placeholder="Eje. 1" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el per&iacute;metro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el &aacute;rea
+          </button>
+        </form>
+      </div>
+      <div class="rectangulo">
+        <h2>Calcula el &aacute;rea y per&iacute;metro de un rectangulo</h2>
+        <form>
+          <label for="ImputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+          </label>
+          <input id="ImputCuadrado" type="number" placeholder="Eje. 1" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el per&iacute;metro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el &aacute;rea
+          </button>
+        </form>
+      </div>
+      <div class="triangulo">
+        <h2>
+          Calcula el &aacute;rea y per&iacute;metro de un tri&aacute;ngulo
+        </h2>
+        <form>
+          <label class="label" for="lado1"> Lado 1: </label>
+          <input
+            class="input-number"
+            id="lado1"
+            type="number"
+            placeholder="Eje. 1"
+          />
+
+          <label class="label" for="lado2"> Lado 2: </label>
+          <input
+            class="input-number"
+            id="lado2"
+            type="number"
+            placeholder="Eje. 1"
+          />
+
+          <label class="label" for="base"> Base: </label>
+          <input
+            class="input-number"
+            id="base"
+            type="number"
+            placeholder="Eje. 1"
+          />
+
+          <label class="label" for="altura"> Altura: </label>
+          <input
+            class="input-number"
+            id="altura"
+            type="number"
+            placeholder="Eje. 1"
+          />
+
+          <button type="button" onclick="calcularPerimetroTriangulo()">
+            Calcular el per&iacute;metro
+          </button>
+          <button type="button" onclick="areaTrianguloFinal()">
+            Calcular el &aacute;rea
+          </button>
+        </form>
+      </div>
+      <div class="circulo">
+        <h2>Calcula el &aacute;rea y per&iacute;metro de un circulo</h2>
+        <form>
+          <label for="ImputCuadrado">
+            Escribe cuanto mide cada lado de tu cuadrado:
+          </label>
+          <input id="ImputCuadrado" type="number" placeholder="Eje. 1" />
+          <button type="button" onclick="calcularPerimetroCuadrado()">
+            Calcular el per&iacute;metro
+          </button>
+          <button type="button" onclick="calcularAreaCuadrado()">
+            Calcular el &aacute;rea
+          </button>
+        </form>
+      </div>
+    </section>
 
     <script type="text/javascript" src="assets/js/figuras.js"></script>
-</body>
+  </body>
 </html>

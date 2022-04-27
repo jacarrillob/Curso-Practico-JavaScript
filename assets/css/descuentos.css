@@ -1,0 +1,34 @@
+.container h1 {
+    margin: 0px;
+    text-align: center;
+    padding: 15px 0px;
+    text-transform: uppercase;
+}
+
+.discount-container-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.discount-container {
+    padding: 5px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+}
+
+.discount-container h2{
+    margin: 0px;
+    text-align: left;
+    padding: 10px 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px;
+    display: block;
+}
+.discount-container p {
+    margin: 0px;
+    padding: 10px 0px;
+}

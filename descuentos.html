@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porcentajes y Descuentos</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/descuentos.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div>
+        <h1>Porcentajes y Descuentos</h1>
+        <p>Este es el segundo taller pr&aacute;ctico de JavaScript</p>
+      </div>
+    </header>
+    <nav>
+      <div class="nav-container">
+        <ul>
+          <li>
+            <a href="figuras.html">Figuras Geométricas</a>
+          </li>
+          <li>
+            <a href="descuentos.html">Figuras Geométricas</a>
+          </li>
+          <li>
+            <a href="promedio.html">Promedio</a>
+          </li>
+          <li>
+            <a href="mediana.html">Mediana</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="container">
+      <h1>Calcula el precio a pagar de tus productos</h1>
+      <div class="discount-container-main">
+        <div class="discount-container">
+          <form>
+            <h2>Precio con descuento (%)</h2>
+            <p for="InputPrice">Escribe el precio del producto</p>
+            <input id="InputPrice" type="number" />
+            <p for="InputDiscount">Escribe el descuento</p>
+            <input id="InputDiscount" type="number" />
+            <button type="button" onclick="calcularPrecioPorcentaje()">
+              Calcular Precio
+            </button>
+            <p id="ResultPrice"></p>
+          </form>
+        </div>
+        <div class="discount-container">
+          <form>
+            <h2>
+              Precio con descuento (Cupones) - Solución #1: Arrays y Switch
+            </h2>
+            <p for="InputPrice1">Escribe el precio del producto</p>
+            <input id="InputPrice1" type="number" />
+            <p for="InputCupon1">Escribe el nombre de su cupón</p>
+            <input id="InputCupon1" type="text" />
+            <button type="button" onclick="calcularPrecioCupon1()">
+              Calcular Precio
+            </button>
+            <p id="ResultCupon1"></p>
+          </form>
+        </div>
+        <div class="discount-container">
+          <form>
+            <h2>
+              Precio con descuento (Cupones) - Solución #2: legibilidad, error
+              first y muerte al switch
+            </h2>
+            <p for="InputPrice2">Escribe el precio del producto</p>
+            <input id="InputPrice2" type="number" />
+            <p for="InputCupon2">Escribe el nombre de su cupón</p>
+            <input id="InputCupon2" type="text" />
+            <button type="button" onclick="calcularPrecioCupon2()">
+              Calcular Precio
+            </button>
+            <p id="ResultCupon2"></p>
+          </form>
+        </div>
+        <div class="discount-container">
+          <form>
+            <h2>
+              Precio con descuento (Cupones) - Solución #3: arrays y
+              condicionales mucho más inteligentes
+            </h2>
+            <p for="InputPrice3">Escribe el precio del producto</p>
+            <input id="InputPrice3" type="number" />
+            <p for="InputCupon3">Escribe el nombre de su cupón</p>
+            <input id="InputCupon3" type="text" />
+            <button type="button" onclick="calcularPrecioCupon3()">
+              Calcular Precio
+            </button>
+            <p id="ResultCupon3"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="assets/js/descuentos.js"></script>
+  </body>
+</html>
